@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+/* #066841 #ed3238 #f8f8ff*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  color: white;
+}
+
+/* ======== */
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #f8f8ff;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav li {
+  margin: 0 16px;
+}
+
+header nav a {
+  padding: 16px 24px;
+  position: relative;
+  transition: 0.4s;
+  border-radius: 6px;
+  background: #ed3238;
+}
+
+header nav a::after {
+  content: "";
+  width: 0px;
+  height: 5px;
+  border-radius: 0 0 0 6px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #066841;
+  transition: 0.4s;
+}
+
+header nav a:hover::after {
+  width: 50%;
+}
+
+header .logo img {
+  width: 120px;
+}
+
+/* ======== */
+
+section.intro {
+  background: linear-gradient(to right, #000b, #0008),
+    url("./assets/sandubão_do_bão.jpg");
+  min-height: 450px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.intro-content {
+  width: 70%;
+  margin: 0 auto;
+  padding: 64px;
+}
+
+.intro-content .first-text {
+  font-size: 24px;
+}
+
+.intro-content .details-text {
+  margin: 32px 0;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.intro-content .highlighted-text {
+  display: inline-block;
+  margin-top: 48px;
+  border-bottom: 5px solid #066841;
+}
+
+/* ======== */
+
+#about {
+  background: #ed3238;
+  padding: 64px 48px;
+}
+
+#about .about-content {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+}
+
+#about .about-img {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about .about-img img {
+  flex: 1 1;
+  border: 10px solid #f8f8ff;
+  border-radius: 8px;
+  filter: grayscale(100%);
+}
+
+#about .about-text {
+  width: 50%;
+  margin-left: 32px;
+  text-transform: uppercase;
+}
+
+#about .about-text h1 {
+  margin-bottom: 24px;
+  font-size: 40px;
+}
+
+#about .about-text p {
+  text-align: justify;
+  font-size: 14px;
+}
+
+/* ======== */
+
+section {
+  background: #f8f8ff;
+  padding: 64px 0;
+}
+
+.food-menu h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 32px;
+  color: #000;
+}
+
+.cards-container {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cards-container .card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  background: #066841;
+  padding: 24px 16px;
+  border-radius: 4px;
+  margin: 0 8px;
+  transition: 0.4s;
+}
+
+.cards-container .card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  border-radius: 8px;
+}
+
+.card .name {
+  font-size: 20px;
+  margin: 16px auto;
+  font-weight: 700;
+  color: white;
+}
+
+.card .details-list li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 4px 0;
+  transition: 0.4s;
+}
+
+.card .details-list li::before {
+  background-color: #f8f8ff;
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  margin: 0 4px;
+}
+
+.card .details-list li:hover {
+  transform: translateX(5px);
+}
+
+/* ======== */
+
+#contact {
+  background: #ed3238;
+  padding: 56px 64px;
+}
+
+#contact .contact-content {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-content h1 {
+  margin-bottom: 16px;
+  border-bottom: 5px solid #066841;
+}

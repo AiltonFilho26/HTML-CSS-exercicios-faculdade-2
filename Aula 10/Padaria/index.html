@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pão da Tia Elena</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet" />
+
+    <link href="css/tiaelena.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white shadow-lg">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand" href="index.html"> Pão da Tia Elena </a>
+
+        <div class="d-lg-none">
+          <button
+            type="button"
+            class="custom-btn btn btn-danger"
+            data-bs-toggle="modal"
+            data-bs-target="#BookingModal"
+          >
+            Reservation
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Bem vindo</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="Sobre.html">História</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-12 m-auto">
+              <div class="heroText">
+                <h1 class="text-white mb-lg-5 mb-3">
+                  O pão mais crocante do mundo
+                </h1>
+
+                <div class="c-reviews my-3 d-flex flex-wrap align-items-center">
+                  <div class="d-flex flex-wrap align-items-center">
+                    <h4 class="text-white mb-0 me-3">5/5</h4>
+
+                    <div class="reviews-stars">
+                      <i class="bi-star-fill reviews-icon"></i>
+                      <i class="bi-star-fill reviews-icon"></i>
+                      <i class="bi-star-fill reviews-icon"></i>
+                      <i class="bi-star-fill reviews-icon"></i>
+                      <i class="bi-star-fill reviews-icon"></i>
+                    </div>
+                  </div>
+
+                  <p class="text-white w-100">
+                    de <strong>1,206+</strong> Reviews por todo o mundo
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-7 col-12">
+              <div
+                id="carouselExampleCaptions"
+                class="carousel carousel-fade hero-carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="carousel-image-wrap">
+                      <img
+                        src="https://images.alphacoders.com/200/thumb-1920-200261.jpg"
+                        class="img-fluid carousel-image"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="carousel-caption">
+                      <span class="text-white">
+                        <i class="bi-geo-alt me-2"></i>
+                        Setor Bueno - Goiânia, Goiâs
+                      </span>
+
+                      <h4 class="hero-text">Pão da Tia Elena</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="overlay"></div>
+      </section>
+
+      <section class="menu section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="text-center mb-lg-5 mb-4">Mais Opções no Menu</h2>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="menu-thumb">
+                <div class="menu-image-wrap">
+                  <img
+                    src="https://images7.alphacoders.com/325/thumb-1920-325507.jpg"
+                    class="img-fluid menu-image"
+                    alt=""
+                  />
+
+                  <span class="menu-tag bg-warning">Café da Manhã</span>
+                </div>
+
+                <div class="menu-info d-flex flex-wrap align-items-center">
+                  <h4 class="mb-0">Pão na cesta</h4>
+
+                  <span class="price-tag bg-white shadow-lg ms-4"
+                    ><small>R$</small>2,50</span
+                  >
+
+                  <div class="d-flex flex-wrap align-items-center w-100 mt-2">
+                    <h6 class="reviews-text mb-0 me-3">5/5</h6>
+
+                    <div class="reviews-stars">
+                      <i class="bi-star-fill reviews-icon"></i>
+                      <i class="bi-star-fill reviews-icon"></i>
+                      <i class="bi-star-fill reviews-icon"></i>
+                      <i class="bi-star-fill reviews-icon"></i>
+                      <i class="bi-star-fill reviews-icon"></i>
+                    </div>
+
+                    <p class="reviews-text mb-0 ms-4">120 Reviews</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="menu-thumb">
+                <div class="menu-image-wrap">
+                  <img
+                    src="https://images7.alphacoders.com/327/thumb-1920-327246.jpg"
+                    class="img-fluid menu-image"
+                    alt=""
+                  />
+
+                  <span class="menu-tag bg-warning">Lanche da manhã</span>
+                </div>
+
+                <div class="menu-info d-flex flex-wrap align-items-center">
+                  <h4 class="mb-0">Pão arabes</h4>
+
+                  <span class="price-tag bg-white shadow-lg ms-4"
+                    ><small>R$</small>14.90</span
+                  >
+
+                  <div class="d-flex flex-wrap align-items-center w-100 mt-2">
+                    <h6 class="reviews-text mb-0 me-3">5/5</h6>
+
+                    <div class="reviews-stars">
+                      <i class="bi-star-fill reviews-icon"></i>
+                      <i class="bi-star-fill reviews-icon"></i>
+                      <i class="bi-star-fill reviews-icon"></i>
+                      <i class="bi-star-fill reviews-icon"></i>
+                      <i class="bi-star-fill reviews-icon"></i>
+                    </div>
+
+                    <p class="reviews-text mb-0 ms-4">500 Reviews</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="menu-thumb">
+                <div class="menu-image-wrap">
+                  <img
+                    src="https://images5.alphacoders.com/325/thumb-1920-325284.jpg"
+                    class="img-fluid menu-image"
+                    alt=""
+                  />
+
+                  <span class="menu-tag bg-warning">Lanche da Tarde</span>
+                </div>
+
+                <div class="menu-info d-flex flex-wrap align-items-center">
+                  <h4 class="mb-0">Coração Cupcakes</h4>
+
+                  <span class="price-tag bg-white shadow-lg ms-4"
+                    ><small>R$</small>29,40</span
+                  >
+
+                  <div class="d-flex flex-wrap align-items-center w-100 mt-2">
+                    <h6 class="reviews-text mb-0 me-3">5/5</h6>
+
+                    <div class="reviews-stars">
+                      <i class="bi-star-fill reviews-icon"></i>
+                      <i class="bi-star-fill reviews-icon"></i>
+                      <i class="bi-star-fill reviews-icon"></i>
+                      <i class="bi-star-fill reviews-icon"></i>
+                      <i class="bi-star-fill reviews-icon"></i>
+                    </div>
+
+                    <p class="reviews-text mb-0 ms-4">99 Reviews</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="BgImage"></section>
+
+      <section class="news section-padding">
+        <div class="container">
+          <div class="row">
+            <h2 class="text-center mb-lg-5 mb-4">
+              O que está esperando? Venha nos conhecer
+            </h2>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h4 class="text-white mb-4 me-5">Pão da Tia Elena</h4>
+          </div>
+
+          <div class="col-lg-4 col-md-7 col-xs-12 tooplate-mt30">
+            <h6 class="text-white mb-lg-4 mb-3">Location</h6>
+
+            <p>Rua 02 QD 09, Setor Bueno - Goiânia - GO - Brasil</p>
+          </div>
+
+          <div class="col-lg-4 col-md-5 col-xs-12 tooplate-mt30">
+            <h6 class="text-white mb-lg-4 mb-3">Abertura</h6>
+
+            <p class="mb-2">Segunda - Sabados</p>
+
+            <p>10:00 - 19:00</p>
+
+            <p>Tel: (62)4002-8922</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    color: white;
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+
+}
+.logo{
+    letter-spacing: 10px;
+    font-size: 30px;
+    font-style: italic;
+    cursor: pointer;
+    text-shadow: 4px 4px 5px rgb(0, 0, 0);
+    box-shadow: 2px 2px 1px white;
+}
+.header .list-itens{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.header .list-itens a{
+    width: 200px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bolder;
+    transition: 0.5s ease-in-out;
+}
+.header .list-itens a:hover{
+    color:white;
+    text-shadow: 2px 2px 2px black;
+    background-color: rgb(150, 14, 14);
+    padding: 15px;
+}
+
+main{
+    align-items: center;
+    background: linear-gradient(rgba(17,17,17,0.2),rgba(20,20,20,1)), url(https://cdn.discordapp.com/attachments/974677663870496780/974680131849318450/34.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner img{
+    width: 1350px;
+}
+
+.primary-text{
+    font-size: 15px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-shadow: 3px 3px 2px black;
+    margin-left: 20px;
+}
+.second-text{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-shadow: 3px 3px 2px black;
+    width: 800px;
+    margin-left: 20px;
+}
+.rodas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 60px;
+    gap: 40px;
+}
+
+.rd-div{
+    display: flex;
+    flex-direction: column;
+    border:2px solid white;
+    border-radius: 20px;;
+    padding: 40px;
+    transition: 0.5s;
+    align-items: center;
+    
+}
+
+.rd-div:hover{
+    transition: 0.5s;
+    box-shadow: 1px 1px 5px white;
+    padding: 15px;
+    cursor: pointer;
+    background-image: linear-gradient(120deg, rgba(255,47,47,0.6516981792717087) 0%, rgba(184,0,0,0.758140756302521) 66%), url(https://cdn.discordapp.com/attachments/974677663870496780/974703572262473758/dfastdfasd.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.rd-div img{
+    width: 200px;
+}
+
+.rd-div h1{
+    text-align: center;
+    display: flex;
+    text-align: left;
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-shadow: 3px 3px 2px black;
+    margin-left: 20px;
+}
+
+.info {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1020%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(0%2c 0%2c 0%2c 1)'%3e%3c/rect%3e%3cpath d='M980.5 394.01 a132.34 132.34 0 1 0 264.68 0 a132.34 132.34 0 1 0 -264.68 0z' fill='rgba(142%2c 28%2c 28%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1329.717%2c373.782C1385.18%2c373.006%2c1443.417%2c359.19%2c1472.001%2c311.654C1501.302%2c262.926%2c1492.951%2c200.868%2c1462.609%2c152.781C1434.268%2c107.865%2c1382.814%2c87.354%2c1329.717%2c86.159C1274.051%2c84.906%2c1216.408%2c99.884%2c1186.045%2c146.557C1153.067%2c197.249%2c1148.049%2c264.618%2c1180.368%2c315.733C1210.962%2c364.118%2c1272.477%2c374.583%2c1329.717%2c373.782' fill='rgba(142%2c 28%2c 28%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1034.62 67.39 a182.45 182.45 0 1 0 364.9 0 a182.45 182.45 0 1 0 -364.9 0z' fill='rgba(142%2c 28%2c 28%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M473.28%2c563.148C524.755%2c563.709%2c564.386%2c520.607%2c586.621%2c474.178C605.901%2c433.919%2c595.633%2c389.564%2c575.484%2c349.733C552.469%2c304.236%2c524.115%2c254.062%2c473.28%2c250.126C417.487%2c245.806%2c364.137%2c281.25%2c339.415%2c331.453C316.93%2c377.113%2c338.68%2c427.683%2c364.142%2c471.752C389.585%2c515.788%2c422.425%2c562.594%2c473.28%2c563.148' fill='rgba(142%2c 28%2c 28%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1221.829%2c425.779C1275.891%2c427.853%2c1337.734%2c424.612%2c1365.608%2c378.243C1393.994%2c331.022%2c1372.818%2c271.525%2c1342.018%2c225.842C1315.113%2c185.936%2c1269.958%2c165.075%2c1221.829%2c164.989C1173.531%2c164.903%2c1126.355%2c184.369%2c1100.896%2c225.412C1074.047%2c268.697%2c1069.648%2c324.29%2c1095.968%2c367.899C1121.543%2c410.272%2c1172.372%2c423.882%2c1221.829%2c425.779' fill='rgba(142%2c 28%2c 28%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M149.53%2c399.798C196.459%2c402.476%2c243.737%2c379.643%2c265.74%2c338.106C286.666%2c298.602%2c272.809%2c251.33%2c247.809%2c214.27C225.918%2c181.818%2c188.658%2c166.995%2c149.53%2c165.831C107.793%2c164.589%2c61.916%2c172.218%2c40.568%2c208.103C18.883%2c244.556%2c33.267%2c289.161%2c54.227%2c326.035C75.503%2c363.466%2c106.545%2c397.345%2c149.53%2c399.798' fill='rgba(142%2c 28%2c 28%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M-104.32 135.85 a184.95 184.95 0 1 0 369.9 0 a184.95 184.95 0 1 0 -369.9 0z' fill='rgba(142%2c 28%2c 28%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M930.692%2c427.036C981.722%2c428.039%2c1021.365%2c386.679%2c1045.123%2c341.505C1067.103%2c299.712%2c1066.359%2c251.543%2c1045.186%2c209.336C1021.257%2c161.636%2c984.019%2c115.433%2c930.692%2c113.401C874.727%2c111.268%2c824.16%2c149.458%2c800.017%2c199.993C778.578%2c244.869%2c798.987%2c294.051%2c823.796%2c337.155C848.686%2c380.4%2c880.806%2c426.056%2c930.692%2c427.036' fill='rgba(142%2c 28%2c 28%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1239.18 537.59 a149.6 149.6 0 1 0 299.2 0 a149.6 149.6 0 1 0 -299.2 0z' fill='rgba(142%2c 28%2c 28%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M832.996%2c243.38C879.379%2c241.898%2c928.422%2c229.046%2c950.636%2c188.301C972.182%2c148.783%2c952.487%2c103.354%2c930.862%2c63.879C908.003%2c22.151%2c880.54%2c-24.63%2c832.996%2c-26.443C783.454%2c-28.333%2c746.483%2c13.188%2c721.286%2c55.886C695.548%2c99.5%2c675.653%2c152.753%2c701.574%2c196.258C727.104%2c239.108%2c783.142%2c244.973%2c832.996%2c243.38' fill='rgba(142%2c 28%2c 28%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M222.33 398.46 a103.06 103.06 0 1 0 206.12 0 a103.06 103.06 0 1 0 -206.12 0z' fill='rgba(142%2c 28%2c 28%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1020'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    
+}
+
+
+
+.info-texto {
+    margin-bottom: 150px;
+    margin-top: 45px;
+}
+
+.info-botao {
+    background-color: white;
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Sarala', sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+    transition: 0.5s ease-in-out;
+    position: absolute;
+    
+}
+
+.info-botao a{
+    color: black;
+}
+
+.info-botao:hover {
+    background-color: rgb(150, 14, 14);
+    width: 190px;
+    height: 70px;
+    font-size: 25px;
+    transition: 0.5s ease-in;
+}
+
+.texto-div{
+    text-decoration: line-through;
+}
+
+.footer{
+    border-top: 2px solid;
+    border-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background: linear-gradient(0deg, rgba(55,50,47,1) 0%, rgba(0,0,0,0.6713060224089635) 0%),url(https://image.winudf.com/v2/image1/Y29tLkJlc3RDYXJXYWxscGFwZXJzLk1lcmNlZGVzQmVuendhbGxwYXBlci5pbWFnZXMucGhvdG8ubG9ja3NjcmVlbl9zY3JlZW5fMF8xNTgxNjQwNjc1XzAyNw/screen-0.jpg?fakeurl=1&type=.webp);
+    background-attachment: fixed;
+    background-position: center;
+    height: 10vh;
+    padding: 100px 50px 100px 50px;
+}
+
+.footer h1{
+    font-size: 25px;
+}

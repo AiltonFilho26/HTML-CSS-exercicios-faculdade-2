@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8c16e3ffb3.js" crossorigin="anonymous"></script>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            color: white;
+            font-family: 'Lato', sans-serif;
+            width: 100%;
+            height: 100%;
+        }
+
+        body{
+            
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+        .header{
+            display: flex;
+            flex-direction: row;
+            position: fixed;
+            justify-content: space-around;
+            background-color: rgba(0, 0, 0, 0.8);
+            align-items: center;
+            width: 100%;
+            padding: 10px;
+
+        }
+        .logo{
+            letter-spacing: 10px;
+            font-size: 30px;
+            font-style: italic;
+            cursor: pointer;
+            text-shadow: 4px 4px 5px rgb(0, 0, 0);
+            box-shadow: 2px 2px 1px white;
+        }
+        .header .list-itens{
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .header .list-itens a{
+            width: 200px;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+            font-weight: bolder;
+            transition: 0.5s ease-in-out;
+        }
+        .header .list-itens a:hover{
+            color:black;
+            background-color: rgb(236, 233, 9);
+            padding: 15px;
+        }
+        main{
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(rgba(17,17,17,0.2),rgba(20,20,20,1)), url(https://cdn.discordapp.com/attachments/953042496043241495/973330224047595540/wallhaven-ox6j6l_1440x900.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .main{
+            display: flex;
+            flex-direction:column;
+            justify-content: flex-start; 
+        }
+        .primary-text{
+            font-size: 50px;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            font-weight: bolder;
+            text-shadow: 3px 3px 2px black;
+            margin-left: 20px;
+        }
+        .second-text{
+            font-size: 25px;
+            text-transform: uppercase;
+            font-weight: bolder;
+            text-shadow: 3px 3px 2px black;
+            width: 800px;
+            margin-left: 20px;
+        }
+        .btn{
+            display: flex;
+            margin-top: 150px;
+            justify-content:flex-end;
+        }
+        .btn-1{
+            width: 250px;
+            height: 60px;
+            cursor: pointer;
+            border:1px solid white;
+            color:white;
+            text-transform: uppercase;
+            background-color: transparent;
+            font-weight: bolder;
+            letter-spacing: 5px;
+            border-radius: 20px;
+            box-shadow: inset 0 0 0 white;
+            transition: 0.5s ease-in;
+        }
+        .btn-1:hover{
+            box-shadow: inset 0px 250px 0 0 yellow;
+            transition: 1s ease-in;
+            color: black;
+        }
+
+        .footer{
+            box-shadow: inset 0px;
+            border-top: 2px solid;
+            border-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            background-color: black;
+            height: 10vh;
+        }
+
+        .footer h1{
+            font-size: 25px;
+        }
+
+    </style>
+
+    <title>AR-Motors: Peças e Acessórios Diversos</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h1 class="logo">AR-Motors</h1>
+            <nav>
+                <ul class="list-itens">
+                    <li><a href="rodas.html">Rodas</a></li>
+                    <li><a href="peças.html">Peças e Acessórios</a></li>
+                    <li><a href="motores.html">Motores</a></li>
+                    <li><a href="suspensao.html">Suspensão e Freio</a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="main">
+                <h1 class="primary-text">Peças e Acessórios Diversos</h1>
+                <h1 class="second-text">
+                    Explore a vasta gama de peças e acessórios para veículos
+                     em geral, como rodas, suspensões, motores, entre outros. </h1>
+                <div class="btn">
+                    <button class="btn-1">Saber mais</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+    <h1>Copyright 2022 - UNIP GO</h1>
+    </footer>
+
+</body>
+
+</html>
